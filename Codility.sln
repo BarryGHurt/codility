@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codility", "Codility\Codility.csproj", "{3AFF7C43-3D9B-4209-84D2-DC54ACF50D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityTests", "CodilityTests\CodilityTests.csproj", "{B200B76C-7B65-4C8E-AABC-923278A3045B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AFF7C43-3D9B-4209-84D2-DC54ACF50D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFF7C43-3D9B-4209-84D2-DC54ACF50D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFF7C43-3D9B-4209-84D2-DC54ACF50D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFF7C43-3D9B-4209-84D2-DC54ACF50D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B200B76C-7B65-4C8E-AABC-923278A3045B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B200B76C-7B65-4C8E-AABC-923278A3045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B200B76C-7B65-4C8E-AABC-923278A3045B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B200B76C-7B65-4C8E-AABC-923278A3045B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
