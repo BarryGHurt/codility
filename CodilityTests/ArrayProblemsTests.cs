@@ -28,7 +28,6 @@ namespace CodilityTests
             var testempty = arr.Rotate(empty, 3);
 
             Assert.AreEqual(0, testempty.Length);
-
         }
     }
 }

@@ -11,40 +11,45 @@ namespace Codility
 
         public int[] Rotate(int[] A, int K)
         {
-            // Perform K rotations on input
+            // Perform K rotations to the right on input
 
+            // The easy ones
             if (A == null || A.Length == 0 )
             {
                 return A;
             }
 
+            // Only need to rotate what's left after a full rotation
             int k = K % A.Length;
-
             if ( A.Length == k)
             {
                 return A;
             }
 
+            // Only grow by k
+            int[] backK = new int[k];
 
-            int[] output = new int[A.Length];
+            int last = A.Length - k;
 
-
-            for (int i = 0; i < (A.Length - k); i++)
-            {
-                output[i + k] = A[i];
-            }
-
-            int lastA = A.Length;
-
-
+            // Save the last k elements
             for (int i = 0; i < k; i++)
             {
-                output[i] = A[lastA - (k - i)];
+                backK[i] = A[last + i];
             }
 
-            return output;
+            // Shift by k
+            for (int i = 0; (i + k) < A.Length ; i++)
+            {
+                A[i + k] = A[i];
+            }
 
+            // Insert the saved k elements at the front
+            for (int i = 0; i < k; i++)
+            {
+                A[i] = backK[i];
+            }
 
+            return A;
         }
     }
 }
