@@ -51,5 +51,31 @@ namespace Codility
 
             return A;
         }
+
+        public int OddManOut(int[] A)
+        {
+            int oddnum = 0;
+
+            // Super efficient solution 
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    oddnum ^= A[i];
+            //}
+
+
+            // My solution
+            Array.Sort(A);
+
+            for (int i = 0; i < A.Length; i += 2)
+            {
+                if (i + 1 == A.Length || A[i] != A[i + 1])
+                {
+                    oddnum = A[i];
+                    break;
+                }
+            }
+
+            return oddnum;
+        }
     }
 }

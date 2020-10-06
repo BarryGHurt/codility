@@ -29,5 +29,24 @@ namespace CodilityTests
 
             Assert.AreEqual(0, testempty.Length);
         }
+
+        [Test]
+        public void OddManOutTest()
+        {
+            var arr = new ArrayProblems();
+
+            int[] testitem = { 9, 3, 9, 3, 9, 7, 9 };
+
+            var testout = arr.OddManOut(testitem);
+
+            Assert.AreEqual(7, testout);
+
+            int[] testitem2 = { 9, 3, 9, 3, 9, 11, 9 };
+
+            var testout2 = arr.OddManOut(testitem2);
+
+            Assert.AreEqual(11, testout2);
+
+        }
     }
 }
